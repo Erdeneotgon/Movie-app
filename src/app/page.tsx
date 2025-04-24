@@ -1,5 +1,5 @@
+import { HeaderContainer } from "@/components/header/HeaderContainer";
 import { axiosInstance } from "@/lib/axios-instance";
-import { Header } from "./components/Header";
 
 const getPopularMovies = async () => {
   const { data } = await axiosInstance("/movie/popular?language=en-US&page=1");
@@ -11,10 +11,6 @@ const Home = async () => {
 
   console.log("populars", populars);
 
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <div></div>;
 };
 export default Home;
